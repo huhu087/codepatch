@@ -1,4 +1,5 @@
-#summary Description of _GuideBot_
+#summary Description of CodePatch functionality
+#labels Featured,Phase-Requirements,Phase-QA
 
 = Introduction =
 
