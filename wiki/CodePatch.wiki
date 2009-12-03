@@ -29,3 +29,12 @@ After the merge is done _CodePatch_ writes statistics of performed actions into 
 *CREATE PATCH MODE*
 
 Create Patch mode should be used whenever you want to find out which files from your working folder specified by “My path” have been modified relative to files in the “Base path” folder. In this mode _CodePatch_ checks files and put the modified ones into the "Result path" folder. 
+
+
+*ACKNOWLEDGES*
+CodePatch is written in <a href = "http://www.python.org" target = _blank>Python v2.6</a>.
+<br>
+Windows executable file was built with <a href = "http://www.py2exe.org" target = _blank>py2exe</a> utility.
+<br><br>
+CodePatch uses <a href = "http://code.google.com/p/pymerge3/" target = _blank>pymerge3</a>
+library to merge two text files that have a common ancestor into a single file.
