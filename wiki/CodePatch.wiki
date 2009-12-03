@@ -33,9 +33,10 @@ Create Patch mode should be used whenever you want to find out which files from 
 
 *ACKNOWLEDGES*
 
-CodePatch is written in <a href = "http://www.python.org" target = _blank>Python v2.6</a>.
-<br>
-Windows executable file was built with <a href = "http://www.py2exe.org" target = _blank>py2exe</a> utility.
-<br><br>
+CodePatch is written in <a href = "http://www.python.org" target = _blank>Python v2.6</a>
 
-CodePatch uses another project hosted on google - <a href = "http://code.google.com/p/pymerge3/" target = _blank>pymerge3</a> library to merge two text files that have a common ancestor into a single file.
+
+Windows executable file was built with <a href = "http://www.py2exe.org" target=_blank> py2exe </a>
+
+
+CodePatch uses another project hosted on google - <a href = "http://code.google.com/p/pymerge3/" target = _blank> pymerge3 </a> library to merge two text files that have a common ancestor into a single file.
