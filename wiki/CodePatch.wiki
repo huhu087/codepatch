@@ -39,4 +39,4 @@ CodePatch is written in <a href = "http://www.python.org" target = _blank>Python
 Windows executable file was built with <a href = "http://www.py2exe.org" target=_blank> py2exe </a>
 
 
-CodePatch uses another project hosted on google - <a href = "http://code.google.com/p/pymerge3/" target = _blank> pymerge3 </a> library to merge two text files that have a common ancestor into a single file.
+CodePatch uses another project hosted on google - <a href = "http://code.google.com/p/pymerge3/" target = _blank> pymerge3</a>  library to merge two text files that have a common ancestor into a single file.
