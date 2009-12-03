@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>Logicking's CodePatch</title>
+</head>
+<body>
+<img style="float:left; border: 5px solid white;" src="images/codePatchLogo.png" width=129 height=147 alt="Game Mechanics Kit Logo"></img>
+<a href="http://www.logicking.com" target=_blank>
+<img style="float:right; border: 5px solid white;" src="images/logickingLogo.png" border=0 target=_blank alt="Logicking.com" width=151 height=45></img></a>
+</a>
+
+
+<h1>Logicking's CodePatch</h1>
+
+<a href="http://www.logicking.com/index.php?page=codePatch" target=_blank>
+CodePatch Homepage
+</a>
+
+<hr>
+<h3>What is CodePatch?</h3>
+CodePatch is a free easy to use utility for updating your source code files.
+CodePatch can also make patches by itself.
+
+<br><br>
+<h3>How it works?</h3>
+
+CodePatch works in <i>"Merge Code"</i> and <i>"Create Patch"</i> modes. 
+<br><br>
+<img src="images/screen01.jpg" alt="Merge Code"></img>
+
+
+
+<h4>MERGE CODE MODE</h4>
+
+
+
+Merging is a common task for developers who rely on third-party code in their own projects. 
+<br>
+Imagine that you are using some library <i>«Lib version 1»</i> in your project. 
+Say you’ve made some changes to this library in order to meet specific needs of your project. 
+Let’s call modified version of the library <i>«Lib version 1 my»</i>. 
+And now library provider is releasing <i>«Lib version 2»</i> - 
+a new version of the library with some important updates and bug fixes. 
+You also want to update your code to the newer version but since you’ve 
+made your changes to the library code by yourself this process won’t be trivial.
+<br><br>
+Hopefully CodePatch is designed precisely to handle such kinds of tasks. 
+<br><br>
+To start you have to provide CodePatch with following:
+<br>
+<ul>
+<li><b>“My path”</b> – a path where you have your modified code (<i>«Lib version 1 my»</i> for our example),
+<li><b>“Base path”</b> – a path with original unmodified version of the code from the provider (<i>«Lib version 1»</i>),
+<li><b>“Their path”</b> – a new version of code from the third-party provider (<i>«Lib version 1»</i>),
+<li><b>“Result path”</b> – a path where you want result files to be placed.
+</ul>
+CodePatch will walk recursively through the sub-folders and check every file it will find: binary or text. 
+<br>
+CodePatch is using three-way merge (also know as merging from a common ancestor) algorithm to merge text files. 
+This algorithm considers changes made by you (from “My path”) and changes released by 
+third-party provider (“Their path”) relative to the original version (“Base path”).
+<br><br>
+CodePatch can call external diff program to allow you manually resolve merging conflicts in text files.
+We recommend you a freeware program <a href = "http://www.winmerge.org" target = _blank >WinMerge</a> for this purpose.
+You have to specify full path to merge program in <b>"Program path"</b> field and check 
+<b>"Use external program to resolve conflicts"</b> flag.
+
+<br><br>
+For binaries CodePatch will use a modified file from the <b>“My path”</b> or <b>“Their path”</b> 
+if there is only one file that has differences relative to the one from <b>“Base path”</b>, 
+otherwise it will report a conflict.
+<br>
+<br>
+After the merge is done CodePatch writes statistics of performed actions into the <b>"_codePatch.txt"</b> from the “Result path”.
+ 
+<h4>CREATE PATCH MODE</h4>
+
+<i>Create Patch</i> mode should be used whenever you want to find out 
+which files from your working folder specified by <b>“My path”</b> have been modified relative to
+files in the <b>“Base path”</b> folder.
+
+In this mode CodePatch checks files and put the modified ones into the <b>"Result path"</b> folder.
+ 
+<br><h3>ACKNOWLEDGES</h3>
+CodePatch is a freeware and distributed under the terms of the GNU General Public License.
+<br>
+CodePatch is written in <a href = "http://www.python.org" target = _blank>Python v2.6</a>.
+<br>
+Windows executable file was built with <a href = "http://www.py2exe.org" target = _blank>py2exe</a> utility.
+<br><br>
+CodePatch uses <a href = "http://code.google.com/p/pymerge3/" target = _blank>pymerge3</a>
+library to merge two text files that have a common ancestor into a single file.
+<br><br><br><hr>
+<center>
+Copyright © 2009 <a href="http://www.logicking.com" target=_blank>Logicking.com</a>. All Rights Reserved.  
+</center>
+</body>
+

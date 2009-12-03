@@ -1,0 +1,12 @@
+All files initially created by Canonical Ltd.[1] and taken from the bazaar[2]
+project. Specifically, these authors are credited:
+
+Aaron Bentley
+Bram Cohen
+
+The merge3 package was created (and ever-so-slightly modified) by Patrick
+Lewis.
+
+[1] http://www.canonical.com
+[2] http://bazaar-vcs.org
+
