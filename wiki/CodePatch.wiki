@@ -20,7 +20,7 @@ To start you have to provide _CodePatch_ with following:
 _CodePatch_ will walk recursively through the sub-folders and check every file it will find: binary or text.
 _CodePatch_ is using three-way merge (also know as merging from a common ancestor) algorithm to merge text files. This algorithm considers changes made by you (from “My path”) and changes released by third-party provider (“Their path”) relative to the original version (“Base path”).
 
-_CodePatch_ can call external diff program to allow you manually resolve merging conflicts in text files. We recommend you a freeware program http://winmerge.org/ for this purpose. You have to specify full path to merge program in "Program path" field and check "Use external program to resolve conflicts" flag.
+_CodePatch_ can call external diff program to allow you manually resolve merging conflicts in text files. We recommend you a freeware program <a href = "http://www.winmerge.org" target = _blank >WinMerge</a> for this purpose. You have to specify full path to merge program in "Program path" field and check "Use external program to resolve conflicts" flag.
 
 For binaries CodePatch will use a modified file from the “My path” or “Their path” if there is only one file that has differences relative to the one from “Base path”, otherwise it will report a conflict.
 
@@ -32,9 +32,10 @@ Create Patch mode should be used whenever you want to find out which files from 
 
 
 *ACKNOWLEDGES*
+
 CodePatch is written in <a href = "http://www.python.org" target = _blank>Python v2.6</a>.
 <br>
 Windows executable file was built with <a href = "http://www.py2exe.org" target = _blank>py2exe</a> utility.
 <br><br>
-CodePatch uses <a href = "http://code.google.com/p/pymerge3/" target = _blank>pymerge3</a>
-library to merge two text files that have a common ancestor into a single file.
+
+CodePatch uses another project hosted on google - <a href = "http://code.google.com/p/pymerge3/" target = _blank>pymerge3</a> library to merge two text files that have a common ancestor into a single file.
